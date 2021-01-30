@@ -200,17 +200,8 @@ public class TestBase {
 	}
 
 	@AfterTest
-	public void closeBrowser(Valid scenario){
-	    if(scenario.isFailed()){
-	        try{
-	            TakesScreenshot screenshot = (TakesScreenshot)driver;
-	            File source = screenshot.getScreenshotAs(OutputType.FILE);
-	            FileUtils.copyFile(source, new File("logs/screenshots/" + scenario.getName() + ".png"));
-	            System.out.println("Screenshot taken");
-	        } catch (Exception e){
-	            System.out.println("Exception while taking screenshot " + e.getMessage());
-	        }
-	    }
+	public void closeBrowser(){
+	    
 	    driver.quit();
 }
 }
