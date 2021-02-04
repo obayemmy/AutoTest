@@ -203,5 +203,6 @@ public class TestBase {
 	public void closeBrowser(){
 	    
 	    driver.quit();
+	    Reporter.log("=======browser session completed============", true);
 }
 }
