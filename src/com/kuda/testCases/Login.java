@@ -21,11 +21,11 @@ public class Login extends TestBase {
 		//Validate response message
 		String actualMsg = getText("failedLoginMSg_XPATH");
 		String expectedMsg = "Username or password is invalid";
-		Assert.assertEquals(actualMsg, expectedMsg, "Incorrect Message is returned");
+		Assert.assertEquals(actualMsg, expectedMsg, "Incorrect Message is returned");	   
+	}
+	@Test(description = "This TestCase will perform valid login", priority = 2)
+	public void validLogin() {
 		
-		
-		 
-		   
 	}
 
 }
