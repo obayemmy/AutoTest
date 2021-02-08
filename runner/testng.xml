@@ -4,7 +4,6 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.kuda.testCases.Login"/>
-      <class name="com.kuda.base.TestBase"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
